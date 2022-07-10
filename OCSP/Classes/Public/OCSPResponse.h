@@ -2,7 +2,7 @@
 //  OCSPResponse.h
 //  OCSP
 //
-//  Created by 冷秋 on 2022/7/8.
+//  Created by Magic-Unique on 2022/7/8.
 //
 
 #import <Foundation/Foundation.h>

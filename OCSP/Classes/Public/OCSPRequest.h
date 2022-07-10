@@ -2,7 +2,7 @@
 //  OCSPRequest.h
 //  OCSP
 //
-//  Created by 冷秋 on 2022/7/8.
+//  Created by Magic-Unique on 2022/7/8.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,7 +14,11 @@
 @property (nonatomic, strong, readonly) NSData *serialNumberBytes;
 
 /// 创建请求，传入证书序列号数据
-/// @param number NSString(序列号十进制文本，或者十六进制文本) 或者传入 NSData(序列号二进制数据)
+/// @param number NSString(序列号十六进制文本) 或者传入 NSData(序列号二进制数据)
 + (instancetype)requestWithSerialNumber:(id)number;
+
+- (NSURL *)toOCSPURL;
+
+- (NSURLRequest *)toURLRequest;
 
 @end

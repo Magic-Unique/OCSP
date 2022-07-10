@@ -1,6 +1,10 @@
 
-target 'OCSP_Tests' do
+target 'OCSPExample' do
+
+  pod 'MobileProvision'
+  pod 'PKCS12'
+  pod 'OpenSSL-Universal', '1.0.2.20'
+  pod 'MUFoundation/MUPath'
   pod 'OCSP', :path => '../'
-  
   
 end

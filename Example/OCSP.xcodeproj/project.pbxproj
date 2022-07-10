@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A7A58A31E2A707853A73096 /* libPods-OCSPExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C7C73E6449155153490FA8 /* libPods-OCSPExample.a */; };
 		6DC2CB32287755BA003DFB05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC2CB31287755BA003DFB05 /* AppDelegate.m */; };
 		6DC2CB35287755BA003DFB05 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC2CB34287755BA003DFB05 /* SceneDelegate.m */; };
 		6DC2CB38287755BA003DFB05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC2CB37287755BA003DFB05 /* ViewController.m */; };
@@ -14,11 +15,14 @@
 		6DC2CB3D287755BE003DFB05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC2CB3C287755BE003DFB05 /* Assets.xcassets */; };
 		6DC2CB40287755BE003DFB05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC2CB3E287755BE003DFB05 /* LaunchScreen.storyboard */; };
 		6DC2CB43287755BE003DFB05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC2CB42287755BE003DFB05 /* main.m */; };
+		6DEC246628781C2B008211FF /* cert.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 6DEC246428781BCA008211FF /* cert.p12 */; };
+		6DEC246728781C2F008211FF /* profile.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 6DEC246528781BCB008211FF /* profile.mobileprovision */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00FBBD6FFD7563EE390769AA /* OCSP.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OCSP.podspec; path = ../OCSP.podspec; sourceTree = "<group>"; };
+		00FBBD6FFD7563EE390769AA /* OCSP.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OCSP.podspec; path = ../OCSP.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		051818A79AAF9B1727A3840A /* libPods-OCSP_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCSP_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C7C73E6449155153490FA8 /* libPods-OCSPExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCSPExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9F38B45345B962D832AEA2 /* Pods-OCSP_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCSP_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OCSP_Tests/Pods-OCSP_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -36,7 +40,12 @@
 		6DC2CB3F287755BE003DFB05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DC2CB41287755BE003DFB05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DC2CB42287755BE003DFB05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DEC246428781BCA008211FF /* cert.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cert.p12; sourceTree = "<group>"; };
+		6DEC246528781BCB008211FF /* profile.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = profile.mobileprovision; sourceTree = "<group>"; };
+		6DEC2468287ACE46008211FF /* README.cn.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.cn.md; path = ../README.cn.md; sourceTree = "<group>"; };
+		6F777B799BAE4F600410F17F /* Pods-OCSPExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCSPExample.debug.xcconfig"; path = "Target Support Files/Pods-OCSPExample/Pods-OCSPExample.debug.xcconfig"; sourceTree = "<group>"; };
 		7F50605335EF3E57B8C3AB2D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B4962966003DA1A344CB22DE /* Pods-OCSPExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCSPExample.release.xcconfig"; path = "Target Support Files/Pods-OCSPExample/Pods-OCSPExample.release.xcconfig"; sourceTree = "<group>"; };
 		CFE6F902EF1C353F8850A202 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F78EA5591EF8B372ED82DCFA /* Pods-OCSP_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCSP_Tests.release.xcconfig"; path = "Target Support Files/Pods-OCSP_Tests/Pods-OCSP_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7A58A31E2A707853A73096 /* libPods-OCSPExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +89,7 @@
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				051818A79AAF9B1727A3840A /* libPods-OCSP_Tests.a */,
+				25C7C73E6449155153490FA8 /* libPods-OCSPExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,6 +99,8 @@
 			children = (
 				3C9F38B45345B962D832AEA2 /* Pods-OCSP_Tests.debug.xcconfig */,
 				F78EA5591EF8B372ED82DCFA /* Pods-OCSP_Tests.release.xcconfig */,
+				6F777B799BAE4F600410F17F /* Pods-OCSPExample.debug.xcconfig */,
+				B4962966003DA1A344CB22DE /* Pods-OCSPExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -97,6 +110,7 @@
 			children = (
 				00FBBD6FFD7563EE390769AA /* OCSP.podspec */,
 				CFE6F902EF1C353F8850A202 /* README.md */,
+				6DEC2468287ACE46008211FF /* README.cn.md */,
 				7F50605335EF3E57B8C3AB2D /* LICENSE */,
 			);
 			name = "Podspec Metadata";
@@ -105,6 +119,8 @@
 		6DC2CB2F287755BA003DFB05 /* OCSPExample */ = {
 			isa = PBXGroup;
 			children = (
+				6DEC246428781BCA008211FF /* cert.p12 */,
+				6DEC246528781BCB008211FF /* profile.mobileprovision */,
 				6DC2CB30287755BA003DFB05 /* AppDelegate.h */,
 				6DC2CB31287755BA003DFB05 /* AppDelegate.m */,
 				6DC2CB33287755BA003DFB05 /* SceneDelegate.h */,
@@ -127,6 +143,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DC2CB44287755BE003DFB05 /* Build configuration list for PBXNativeTarget "OCSPExample" */;
 			buildPhases = (
+				87372216077902D4BB3C465B /* [CP] Check Pods Manifest.lock */,
 				6DC2CB2A287755BA003DFB05 /* Sources */,
 				6DC2CB2B287755BA003DFB05 /* Frameworks */,
 				6DC2CB2C287755BA003DFB05 /* Resources */,
@@ -152,7 +169,8 @@
 				TargetAttributes = {
 					6DC2CB2D287755BA003DFB05 = {
 						CreatedOnToolsVersion = 13.4;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = PS3H92962Y;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -182,11 +200,38 @@
 			files = (
 				6DC2CB40287755BE003DFB05 /* LaunchScreen.storyboard in Resources */,
 				6DC2CB3D287755BE003DFB05 /* Assets.xcassets in Resources */,
+				6DEC246728781C2F008211FF /* profile.mobileprovision in Resources */,
 				6DC2CB3B287755BA003DFB05 /* Main.storyboard in Resources */,
+				6DEC246628781C2B008211FF /* cert.p12 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87372216077902D4BB3C465B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCSPExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DC2CB2A287755BA003DFB05 /* Sources */ = {
@@ -297,6 +342,7 @@
 		};
 		6DC2CB45287755BE003DFB05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F777B799BAE4F600410F17F /* Pods-OCSPExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,9 +364,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = PS3H92962Y;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -331,13 +378,14 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.unique.OCSPExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_MU1;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -345,6 +393,7 @@
 		};
 		6DC2CB46287755BE003DFB05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4962966003DA1A344CB22DE /* Pods-OCSPExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -366,10 +415,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PS3H92962Y;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -380,13 +430,14 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.unique.OCSPExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_MU1;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

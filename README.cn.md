@@ -5,30 +5,25 @@
 [![License](https://img.shields.io/cocoapods/l/OCSP.svg?style=flat)](https://cocoapods.org/pods/OCSP)
 [![Platform](https://img.shields.io/cocoapods/p/OCSP.svg?style=flat)](https://cocoapods.org/pods/OCSP)
 
-[中文](./README.cn.md)
+[English](./README.md)
 
-## Example
+## 安装
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Installation
-
-OCSP is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+OCSP 支持 [CocoaPods](https://cocoapods.org). 在 Podfile 文件中输入下面代码:
 
 ```ruby
 pod 'OCSP'
 ```
 
-## Usage
+## 使用
 
-##### 1. Get serial number string or bytes from certificate
+##### 1. 从苹果证书中获取序列号（十六进制文本）
 
-OCSP needs a serial number to verify, So you needs to read serial number (a NSString or NSData) by yourself.
+OCSP 需要一个序列号来验证证书的合法性, 所以你必须手动获取序列号（一个 `NSString` 或者是一个 `NSData`）
 
-There are two ways to get it:
+这里有两个方法来获取：
 
-You can use [MobileProvision](https://github.com/Magic-Unique) to read serial number from \*.mobileprovision file.
+你可以使用 [MobileProvision](https://github.com/Magic-Unique) 从 \*.mobileprovision 文件中获取序列号：
 
 ```objc
 #import <MobileProvision/MobileProvision.h> // pod 'MobileProvision'
@@ -38,7 +33,7 @@ MPCertificate *certificate = provision.DeveloperCertificates.firstObject;
 NSString *serialNumber = certificate.serialNumber;
 ```
 
-Or use [PKCS12](https://github.com/Magic-Unique/PKCS12) to read serial number from \*.p12 file.
+或者你也可以使用 [PKCS12](https://github.com/Magic-Unique/PKCS12) 从 \*.p12 文件中获取序列号：
 
 ```objc
 #import <PKCS12/PKCS12.h> // pod 'PKCS12'
@@ -47,19 +42,25 @@ P12 *p12 = [P12 p12WithContentsOfFile:@"Your.p12" password:@"your_pwd" error:NUL
 NSString *serialNumber = p12.serialNumber;
 ```
 
-##### 2. Request with serial number
+##### 2. 用序列号请求证书状态
 
 ```objc
 #import <OCSP/OCSP.h>
 
+// Create request
 OCSPRequest *request = [OCSPRequest requestWithSerialNumber:serialNumber];
+
+// Create Session
 OCSPSessionManager *manager = [OCSPSessionManager manager];
+// Or [[OCSPSessionManager alloc] initWithSession:NSURLSession];
+
+// Send request
 [manager request:request handler:^(OCSPResponse *response, NSError *error) {
   	BOOL isRevoked = (response.status == OCSPCertificateStatusRevoked);
 }];
 ```
 
-## Author
+## 作者
 
 冷秋, 516563564@qq.com
 
