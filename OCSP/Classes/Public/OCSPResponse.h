@@ -14,7 +14,7 @@ typedef NS_ENUM(NSUInteger, OCSPCertificateStatus) {
     OCSPCertificateStatusNotParsed      = 0xff,
 };
 
-typedef NS_ENUM(NSUInteger, OCSPRevocationReason) {
+typedef NS_ENUM(NSInteger, OCSPRevocationReason) {
     OCSPRevocationReasonUnrevoked               = -2,
     OCSPRevocationReasonUndetermined            = -1,
     OCSPRevocationReasonUnspecified             = 0,
